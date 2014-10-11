@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+}
+.clear{
+	clear:both;
+}
+.select,.select dl,.select dt{
+	display:inline-block;
+}
+.select{
+	background:#ffffff;
+	position:relative;
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid #9F9F9F;
+}
+.select dt{
+	padding-right:4px;
+}
+.select .select-name{
+	padding: 0 16px;
+	min-width: 16px;
+	display: inline-block;
+	height: 20px;
+	line-height: 20px;
+}
+.select .triangle{
+	cursor:pointer;
+}
+.select .select-dropdown{
+	background:#fff;
+	display:none;
+	position:absolute;
+	top:19px;
+	z-index:4;
+	width:100%;
+	border: 1px solid #9F9F9F;
+	box-sizing: border-box;
+	overflow:auto;
+	max-height:200px;
+}
+.select .select-dropdown span{
+	display:block;
+	cursor:pointer;
+	margin:2px 0;
+	padding-right: 18px;
+}
+
