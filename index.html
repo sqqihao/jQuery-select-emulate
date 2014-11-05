@@ -5,8 +5,18 @@
 <title>无标题文档</title>
 </head>
 <body>
+<span>	
+	<select name="test" id="test">
+    	<option value="00">00</option>
+    	<option value="11">11</option>
+    	<option selected value="22">22</option>
+    	<option value="33">33</option>
+    	<option value="44">44</option>
+    	<option value="55">55</option>
+    </select>
+</span>
 <span>
-    <select name="YYYY" id="YYYY" onchange="YYYYMM(this.value)" value="1999">
+    <select name="YYYY" id="YYYY" onChange="YYYYMM(this.value)" value="1999">
         <option value="1964"> 1964 年</option>
         <option value="1965"> 1965 年</option>
         <option value="1966"> 1966 年</option>
@@ -31,7 +41,7 @@
         <option value="1985"> 1985 年</option>
         <option value="1986"> 1986 年</option>
         <option value="1987"> 1987 年</option>
-        <option value="1988"> 1988 年</option>
+        <option slected value="1988"> 1988 年</option>
         <option value="1989"> 1989 年</option>
         <option value="1990"> 1990 年</option>
         <option value="1991"> 1991 年</option>
@@ -61,7 +71,7 @@
     </select>
 </span>
 <span>
-    <select name="MM" id="MM" onchange="MMDD(this.value)" value="1">
+    <select name="MM" id="MM" onChange="MMDD(this.value)" value="1">
         <option value="1"> 1 月</option>
         <option value="2"> 2 月</option>
         <option value="3"> 3 月</option>
@@ -111,11 +121,11 @@
 <span>
     <select name="xx">
         
-            <option value="140" selected="selected">140</option>
+            <option value="140">140</option>
         
             <option value="141">141</option>
         
-            <option value="142">142</option>
+            <option selected value="142">142</option>
         
             <option value="1020">1020</option>
         

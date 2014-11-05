@@ -46,9 +46,12 @@
 		//新建一个input
 		//替换原来的select为隐藏的input;
 		var $eSelect = this.$eSelect = this.sel;
+		var val = $eSelect.val();
+		//debugger;
+		var index = this.index = $("option[selected]", $eSelect).index() || 0;
 		var name = $eSelect.prop("name");
 		var id = $eSelect.prop("id");
-		this.input = $("<input>", {name : name, id : id , hide : function() { $(this).hide() }});
+		this.input = $("<input>", {name : name, id : id, value : val}).hide();
 		$eSelect.after( this.input );
 		//把原来的数据重新灌进来哒;
 		this.renderOptions();
@@ -62,8 +65,8 @@
 		
 	};
 	EmulateSelect.prototype.initialValue = function() {
-		var span = this.selectDropdown.find("span").eq(0);
-		//input的初始值为select的第一个span的value值;
+		var span = this.selectDropdown.find("span").eq( this.index || 0);
+		//input的初始值为select的或者是默认select中的第一个span的value值;
 		this.selectName.html( span.text() );
 		this.input.val( span.attr("value") );
 	};
