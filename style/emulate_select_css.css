@@ -28,8 +28,15 @@
 	height: 20px;
 	line-height: 20px;
 }
+
 .select .triangle{
 	cursor:pointer;
+	display: inline-block;
+	width: 0;
+	border: 8px solid rgba(0, 0, 0, 0);
+	height: 0;
+	border-top-color: #000;
+	margin-bottom: -8px;
 }
 .select .select-dropdown{
 	background:#fff;
